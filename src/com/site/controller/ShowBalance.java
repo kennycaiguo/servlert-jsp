@@ -30,9 +30,6 @@ public class ShowBalance extends HttpServlet {
             req.setAttribute("firstName", "servlet-jsp");
             req.setAttribute("userInfoList", userInfoService.findUserInfoList());
         }
-
-
-
         RequestDispatcher dispatcher = req.getRequestDispatcher(address);
         dispatcher.forward(req, resp);
 
