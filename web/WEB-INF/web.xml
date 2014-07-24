@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ProcessRequestStats</servlet-name>
+        <servlet-class>coreservlerts.ShowBalance</servlet-class>
+    </servlet>
+    <!-- Assign the URL /processStats to ProcessRequestStats
+      servlet. -->
+    <servlet-mapping>
+        <servlet-name>ProcessRequestStats</servlet-name>
+        <url-pattern>/show.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
