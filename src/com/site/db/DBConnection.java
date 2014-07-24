@@ -31,6 +31,24 @@ public class DBConnection {
 	  }
     return rs;
   }
+
+  //传统JDBC，采用PreparedStatement 。预编译语句集，内置了处理SQL注入的能力
+//  public ResultSet executeQuery2(String sql){
+//      try{
+//          String url= KEY_MYSQL_URL;
+//          String user= KEY_MYSQL_USER;
+//          String password= KEY_MYSQL_PASSWORD;
+//          conn=DriverManager.getConnection(url,user,password);
+////          stmt=conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+//          PreparedStatement preparedStatement = conn.prepareStatement(sql);
+//          rs= preparedStatement.executeQuery(sql);
+//      }catch(SQLException ex){
+//          System.out.println(ex.getMessage());
+//      }
+//      return rs;
+//  }
+
+
   public int executeUpdate(String sql){
 	   int result=0;
 	  try{
