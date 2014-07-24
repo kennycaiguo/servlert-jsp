@@ -1,4 +1,4 @@
-package coreservlerts;
+package com.site.controller;
 
 import java.util.HashMap;
 

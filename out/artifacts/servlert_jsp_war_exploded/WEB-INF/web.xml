@@ -5,13 +5,17 @@
          version="3.1">
     <servlet>
         <servlet-name>ProcessRequestStats</servlet-name>
-        <servlet-class>coreservlerts.ShowBalance</servlet-class>
+        <servlet-class>com.site.controller.ShowBalance</servlet-class>
     </servlet>
     <!-- Assign the URL /processStats to ProcessRequestStats
       servlet. -->
     <servlet-mapping>
         <servlet-name>ProcessRequestStats</servlet-name>
-        <url-pattern>/show.jsp</url-pattern>
+        <url-pattern>/show.html</url-pattern>
     </servlet-mapping>
 
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>

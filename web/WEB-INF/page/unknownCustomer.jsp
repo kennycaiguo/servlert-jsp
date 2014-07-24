@@ -13,5 +13,9 @@
 </head>
 <body>
 ${firstName}
+
+<c:forEach var="item" items="${userInfoList}">
+${item.name}
+</c:forEach>
 </body>
 </html>
